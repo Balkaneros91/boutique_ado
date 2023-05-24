@@ -14,6 +14,9 @@ class StripeWH_Handler:
     def __init__(self, request):
         self.request = request
 
+    def _send_confirmation_email(self, order):
+        pass
+
     def handle_event(self, event):
         """
         Handle generic/unknown/unexpected webhook event
