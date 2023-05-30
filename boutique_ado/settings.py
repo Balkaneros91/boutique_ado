@@ -29,7 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-balkaneros91-boutique-ad-kdjco6rxf2.us2.codeanyapp.com']
+ALLOWED_HOSTS = [
+    '8000-balkaneros91-boutique-ad-kdjco6rxf2.us2.codeanyapp.com', 'localhost']
 
 
 # Application definition
