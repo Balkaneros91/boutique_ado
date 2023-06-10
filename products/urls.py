@@ -9,5 +9,5 @@ urlpatterns = [
     path('delete/<int:product_id>/', views.delete_product, name='delete_product'),
     # Add the path for the confirmation dialogue
     path('delete/<int:product_id>/confirm/',
-         views.confirm_delete_product, name='confirm_delete_product'),
+         views.delete_product, name='delete_product'),
 ]

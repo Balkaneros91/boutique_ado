@@ -153,10 +153,12 @@ def delete_product(request, product_id):
         return redirect(reverse('home'))
 
     if request.method == 'POST':
+
         product = get_object_or_404(Product, pk=product_id)
         product.delete()
         messages.success(request, 'Product deleted!')
         return redirect(reverse('products'))
+
     else:
         # Handle GET request or any other condition
         return redirect(reverse('products'))
